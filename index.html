@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vinod Kumar — Business Intelligence & Data Engineering Engineer portfolio." />
+    <title>Vinod Kumar | BI & Data Engineering</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.png" />
+
+    <!-- No external frameworks. System font stack with premium feel. -->
+  </head>
+
+  <body>
+    <!-- Background (animated gradient + grid + particles) -->
+    <div class="bg" aria-hidden="true">
+      <div class="bg__gradient"></div>
+      <div class="bg__grid"></div>
+      <canvas id="particles" class="bg__particles"></canvas>
+      <div class="bg__vignette"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Vinod Kumar</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav__mobile" id="navMobile" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-label="Hero section">
+        <div class="container hero__inner">
+          <div class="hero__copy reveal">
+            <div class="pill">
+              <span class="dot"></span>
+              Available for BI / Data Engineering Internships
+            </div>
+
+            <h1 class="hero__title">
+              Vinod <span class="accent">Kumar</span>
+            </h1>
+
+            <p class="hero__role">
+              <span class="muted">Business Intelligence &</span>
+              <span class="gradient">Data Engineering Engineer</span>
+            </p>
+
+            <p class="hero__tagline">
+              <span
+                class="typed"
+                id="typed"
+                data-phrases="Building scalable ETL pipelines, enterprise analytics systems, and production-grade BI solutions."
+              ></span>
+              <span class="typed__caret" aria-hidden="true"></span>
+            </p>
+
+            <p class="hero__specialize">
+              Specialized in ETL Pipelines • Production BI • Data Validation • Enterprise Reporting
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">
+                <span>View Projects</span>
+                <span class="btn__glow" aria-hidden="true"></span>
+              </a>
+              <a class="btn btn--resume" href="assets/Vinod_Kumar_Resume.pdf" download>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                    <path
+                      d="M12 3v10m0 0 4-4m-4 4-4-4"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <span>Download Resume</span>
+                <span class="btn__glow" aria-hidden="true"></span>
+              </a>
+              <a class="btn btn--glass" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta-card glass">
+                <div class="meta-card__k">Focus</div>
+                <div class="meta-card__v">ETL • Validation • BI</div>
+              </div>
+              <div class="meta-card glass">
+                <div class="meta-card__k">Stack</div>
+                <div class="meta-card__v">PostgreSQL • Qlik • Python</div>
+              </div>
+              <div class="meta-card glass">
+                <div class="meta-card__k">Strength</div>
+                <div class="meta-card__v">RCA • Production Support</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__panel reveal">
+            <div class="hero-card glass">
+              <div class="hero-card__top">
+                <div class="hero-card__badge">
+                  <span class="badge__pulse" aria-hidden="true"></span>
+                  Enterprise-grade delivery
+                </div>
+                <div class="hero-card__chips">
+                  <span class="chip">Incremental Loads</span>
+                  <span class="chip">Reconciliation</span>
+                  <span class="chip">KPI Engineering</span>
+                </div>
+              </div>
+
+              <div class="hero-card__body">
+                <div class="codebox" aria-label="Technical snapshot">
+                  <div class="codebox__bar">
+                    <span class="cb-dot"></span><span class="cb-dot"></span><span class="cb-dot"></span>
+                    <span class="codebox__title">production-pipeline.snapshot</span>
+                  </div>
+                  <div class="codebox__media" role="group" aria-label="production pipeline preview">
+                    <img
+                      class="codebox__img"
+                      src="assets/production-pipeline.png"
+                      alt="Production pipeline architecture preview"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                <div class="hero-card__stats">
+                  <div class="stat glass">
+                    <div class="stat__n"><span class="counter" data-target="5">5</span>+</div>
+                    <div class="stat__l">Featured Projects</div>
+                  </div>
+                  <div class="stat glass">
+                    <div class="stat__n"><span class="counter" data-target="12">12</span>+</div>
+                    <div class="stat__l">Core Skills</div>
+                  </div>
+                  <div class="stat glass">
+                    <div class="stat__n"><span class="counter" data-target="2026">2026</span></div>
+                    <div class="stat__l">Active Year</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-card__footer">
+                <a class="link" href="#contact">Let’s build production analytics →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="scroll-hint__line"></div>
+          <div class="scroll-hint__text">Scroll</div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">About</h2>
+            <p class="section__subtitle">Recruiter-focused snapshot of impact, rigor, and delivery.</p>
+          </div>
+
+          <div class="about">
+            <div class="about__profile glass reveal">
+              <div class="avatar">
+                <img src="assets/profile.jpg" alt="Vinod Kumar profile photo placeholder" />
+              </div>
+              <div class="about__info">
+                <h3 class="about__name">Vinod Kumar</h3>
+                <p class="about__role">Business Intelligence & Data Engineering Engineer</p>
+
+                <div class="about__links">
+                  <a class="icon-link" href="https://linkedin.com/in/vinod-kumar-32a27931a/" target="_blank" rel="noreferrer">
+                    <span class="icon" aria-hidden="true" data-icon="linkedin"></span>
+                    LinkedIn
+                  </a>
+                  <a class="icon-link" href="https://github.com/Vinodkumar-swipe" target="_blank" rel="noreferrer">
+                    <span class="icon" aria-hidden="true" data-icon="github"></span>
+                    GitHub
+                  </a>
+                  <a class="icon-link" href="mailto:vinodkumar17258@gmail.com">
+                    <span class="icon" aria-hidden="true" data-icon="email"></span>
+                    Email
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__summary glass reveal">
+              <h3 class="card-title">Professional Summary</h3>
+              <p class="card-text">
+                Business Intelligence & Data Engineering professional with hands-on experience in enterprise analytics, ETL pipeline development,
+                Qlik Sense architecture, PostgreSQL validation, data reconciliation, and production reporting systems.
+              </p>
+              <p class="card-text">
+                Worked on telecom revenue assurance pipelines, enterprise sales analytics, regulatory reporting automation, and operational reporting platforms.
+                Experienced in root cause analysis, QVD architecture, KPI engineering, data validation frameworks, and production issue troubleshooting.
+              </p>
+
+              <div class="highlights">
+                <div class="mini glass"><div class="mini__t">ETL Pipelines</div><div class="mini__d">Incremental loads, reconciliation, controls</div></div>
+                <div class="mini glass"><div class="mini__t">Production BI</div><div class="mini__d">Dashboards, RCA, governance</div></div>
+                <div class="mini glass"><div class="mini__t">PostgreSQL</div><div class="mini__d">Validation, query optimization</div></div>
+                <div class="mini glass"><div class="mini__t">Qlik Sense</div><div class="mini__d">QVD layers, set analysis</div></div>
+                <div class="mini glass"><div class="mini__t">Data Validation</div><div class="mini__d">Checks, exceptions, quality gates</div></div>
+                <div class="mini glass"><div class="mini__t">Automation Workflows</div><div class="mini__d">NPrinting, reporting controls</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Skills</h2>
+            <p class="section__subtitle">Categorized stack depth with animated proficiency signals.</p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card glass reveal">
+              <div class="skill-card__head">
+                <h3>Data Engineering</h3>
+                <p>Pipeline engineering, modeling, validation, scalability.</p>
+              </div>
+              <div class="bars">
+                <div class="bar" data-level="92"><div class="bar__top"><span>ETL Pipelines</span><span class="bar__pct">92%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="88"><div class="bar__top"><span>PostgreSQL</span><span class="bar__pct">88%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="90"><div class="bar__top"><span>SQL</span><span class="bar__pct">90%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="82"><div class="bar__top"><span>Python</span><span class="bar__pct">82%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="58"><div class="bar__top"><span>AWS Basics</span><span class="bar__pct">58%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="55"><div class="bar__top"><span>Cloud Fundamentals</span><span class="bar__pct">55%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="54"><div class="bar__top"><span>PySpark (Foundational)</span><span class="bar__pct">54%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="84"><div class="bar__top"><span>Pentaho PDI</span><span class="bar__pct">84%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="86"><div class="bar__top"><span>Data Validation</span><span class="bar__pct">86%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="80"><div class="bar__top"><span>Incremental Loads</span><span class="bar__pct">80%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="78"><div class="bar__top"><span>Data Modeling</span><span class="bar__pct">78%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+              </div>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-card__head">
+                <h3>Business Intelligence</h3>
+                <p>Qlik systems, KPI engineering, and decision-ready reporting.</p>
+              </div>
+              <div class="bars">
+                <div class="bar" data-level="90"><div class="bar__top"><span>Qlik Sense</span><span class="bar__pct">90%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="88"><div class="bar__top"><span>QVD Architecture</span><span class="bar__pct">88%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="82"><div class="bar__top"><span>Set Analysis</span><span class="bar__pct">82%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="86"><div class="bar__top"><span>KPI Engineering</span><span class="bar__pct">86%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="76"><div class="bar__top"><span>NPrinting</span><span class="bar__pct">76%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="85"><div class="bar__top"><span>Dashboard Development</span><span class="bar__pct">85%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="84"><div class="bar__top"><span>Root Cause Analysis</span><span class="bar__pct">84%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+              </div>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-card__head">
+                <h3>Tools & Platforms</h3>
+                <p>Practical tooling for analytics delivery and validation.</p>
+              </div>
+              <div class="tags">
+                <span class="tag">Excel</span>
+                <span class="tag">SAP HANA</span>
+                <span class="tag">QMC</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Pandas</span>
+              </div>
+              <div class="divider"></div>
+              <div class="tags">
+                <span class="tag tag--soft">Production Support</span>
+                <span class="tag tag--soft">Monitoring</span>
+                <span class="tag tag--soft">Validation Controls</span>
+                <span class="tag tag--soft">Documentation</span>
+              </div>
+            </article>
+
+            <article class="skill-card glass reveal">
+              <div class="skill-card__head">
+                <h3>Soft Skills</h3>
+                <p>Enterprise-ready communication and incident handling.</p>
+              </div>
+              <div class="bars">
+                <div class="bar" data-level="90"><div class="bar__top"><span>Problem Solving</span><span class="bar__pct">90%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="84"><div class="bar__top"><span>Production Support</span><span class="bar__pct">84%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="86"><div class="bar__top"><span>Stakeholder Communication</span><span class="bar__pct">86%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="82"><div class="bar__top"><span>Escalation Handling</span><span class="bar__pct">82%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+                <div class="bar" data-level="80"><div class="bar__top"><span>RCA Documentation</span><span class="bar__pct">80%</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Experience</h2>
+            <p class="section__subtitle">Premium vertical timeline with enterprise highlights.</p>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline__line" aria-hidden="true"></div>
+
+            <article class="timeline__item glass">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <div class="timeline__top">
+                  <h3>GainInsights Solutions Pvt Ltd</h3>
+                  <span class="timeline__role">Business Intelligence & Data Engineering Intern</span>
+                </div>
+                <ul class="timeline__list">
+                  <li>Built ETL and reconciliation pipelines</li>
+                  <li>Worked on enterprise Qlik Sense applications</li>
+                  <li>Performed production RCA and debugging</li>
+                  <li>Designed layered QVD architectures</li>
+                  <li>Validated telecom revenue and operational reporting systems</li>
+                  <li>Worked on PostgreSQL backend validation</li>
+                  <li>Implemented automation workflows and reporting controls</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Featured Projects</h2>
+            <p class="section__subtitle">Production-aligned work samples with stack clarity.</p>
+          </div>
+
+          <div class="projects">
+            <article class="project glass reveal">
+              <div class="project__icon" aria-hidden="true">⟠</div>
+              <div class="project__body">
+                <h3>Enterprise Telecom Revenue Assurance ETL Pipeline</h3>
+                <p>
+                  Designed ETL and reconciliation pipelines using Pentaho PDI, PostgreSQL, validation frameworks, incremental loads,
+                  and exception handling for telecom revenue assurance systems.
+                </p>
+                <div class="badges">
+                  <span class="badge">Pentaho PDI</span><span class="badge">PostgreSQL</span><span class="badge">SQL</span><span class="badge">ETL</span><span class="badge">Python</span>
+                </div>
+                <div class="project__actions">
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">View Project</a>
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project glass reveal">
+              <div class="project__icon" aria-hidden="true">⌁</div>
+              <div class="project__body">
+                <h3>IPL 2017 Cricket Analytics ETL Pipeline</h3>
+                <p>
+                  Built a Python ETL pipeline using Pandas, SQLite, and KaggleHub to process IPL 2017 datasets and generate analytics dashboards
+                  for player and team insights.
+                </p>
+                <div class="badges">
+                  <span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">SQLite</span><span class="badge">KaggleHub</span>
+                </div>
+                <div class="project__actions">
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">View Project</a>
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project glass reveal">
+              <div class="project__icon" aria-hidden="true">◈</div>
+              <div class="project__body">
+                <h3>Enterprise Sales Analytics Platform</h3>
+                <p>
+                  Developed scalable Qlik Sense analytics dashboards using layered QVD architecture, KPI engineering, master calendar logic,
+                  and sales performance analytics.
+                </p>
+                <div class="badges">
+                  <span class="badge">Qlik Sense</span><span class="badge">QVD</span><span class="badge">SQL</span><span class="badge">Excel</span>
+                </div>
+                <div class="project__actions">
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">View Project</a>
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project glass reveal">
+              <div class="project__icon" aria-hidden="true">▣</div>
+              <div class="project__body">
+                <h3>AssureOne Production Reporting Platform</h3>
+                <p>
+                  Handled production reporting stabilization, root cause analysis, PostgreSQL validation, and escalation handling for telecom operational reporting systems.
+                </p>
+                <div class="badges">
+                  <span class="badge">Qlik Sense</span><span class="badge">PostgreSQL</span><span class="badge">Excel</span>
+                </div>
+                <div class="project__actions">
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">View Project</a>
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project glass reveal">
+              <div class="project__icon" aria-hidden="true">⟁</div>
+              <div class="project__body">
+                <h3>TRAI Regulatory Reporting Automation</h3>
+                <p>
+                  Worked on regulatory reporting automation, cross-report validation, governance controls, and NPrinting workflows for telecom compliance reporting.
+                </p>
+                <div class="badges">
+                  <span class="badge">Qlik Sense</span><span class="badge">NPrinting</span><span class="badge">Excel</span>
+                </div>
+                <div class="project__actions">
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">View Project</a>
+                  <a class="btn btn--glass btn--sm" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Certifications</h2>
+            <p class="section__subtitle">Clean, recruiter-readable credentials.</p>
+          </div>
+
+          <div class="certs">
+            <div class="cert glass reveal">
+              <div class="cert__cap">Certification</div>
+              <div class="cert__title">QSpiders Data Analyst Certification</div>
+              <div class="cert__meta">Analytics • SQL • BI fundamentals</div>
+            </div>
+
+            <div class="cert glass reveal">
+              <div class="cert__cap">Internship</div>
+              <div class="cert__title">Business Intelligence Internship</div>
+              <div class="cert__meta">Qlik Sense • QVD • KPI engineering</div>
+            </div>
+
+            <div class="cert glass reveal">
+              <div class="cert__cap">Internship</div>
+              <div class="cert__title">Data Engineering Internship</div>
+              <div class="cert__meta">ETL • Validation • PostgreSQL</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section id="achievements" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Achievements</h2>
+            <p class="section__subtitle">Animated counters to show scale and delivery.</p>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card glass reveal">
+              <div class="stat-card__n"><span class="counter" data-target="7">7</span>+</div>
+              <div class="stat-card__l">Enterprise Projects</div>
+            </div>
+
+            <div class="stat-card glass reveal">
+              <div class="stat-card__n"><span class="counter" data-target="20">20</span>+</div>
+              <div class="stat-card__l">Production Issues Resolved</div>
+            </div>
+
+            <div class="stat-card glass reveal">
+              <div class="stat-card__n"><span class="counter" data-target="10">10</span>+</div>
+              <div class="stat-card__l">Dashboards Developed</div>
+            </div>
+
+            <div class="stat-card glass reveal">
+              <div class="stat-card__n"><span class="counter" data-target="5">5</span>+</div>
+              <div class="stat-card__l">ETL Pipelines</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">Send a message or connect directly.</p>
+          </div>
+
+          <div class="contact">
+            <form class="contact__form glass reveal" id="contactForm">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about the role / project..." required></textarea>
+              </div>
+
+              <button class="btn btn--primary" type="submit">
+                <span>Send Message</span>
+                <span class="btn__glow" aria-hidden="true"></span>
+              </button>
+
+              <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="contact__aside reveal">
+              <div class="contact-card glass">
+                <h3>Direct Links</h3>
+
+                <a class="contact-link" href="https://linkedin.com/in/vinod-kumar-32a27931a/" target="_blank" rel="noreferrer">
+                  <span class="icon" aria-hidden="true" data-icon="linkedin"></span>
+                  <span>linkedin.com/in/vinod-kumar-32a27931a/</span>
+                </a>
+
+                <a class="contact-link" href="https://github.com/Vinodkumar-swipe" target="_blank" rel="noreferrer">
+                  <span class="icon" aria-hidden="true" data-icon="github"></span>
+                  <span>github.com/Vinodkumar-swipe</span>
+                </a>
+
+                <a class="contact-link" href="mailto:vinodkumar17258@gmail.com">
+                  <span class="icon" aria-hidden="true" data-icon="email"></span>
+                  <span>vinodkumar17258@gmail.com</span>
+                </a>
+
+                <div class="contact-card__foot">
+                  <div class="hint">
+                    Prefer email? Attach your JD and I’ll respond with relevant projects and stack alignment.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© 2026 Vinod Kumar | Business Intelligence & Data Engineering Engineer</div>
+        <a class="link" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
